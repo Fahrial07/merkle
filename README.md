@@ -24,5 +24,5 @@ npm i
 5. For API documentation, you can check the postman link
 
 ```bash
-
+https://documenter.getpostman.com/view/16904284/2s9YsT5o7a
 ```
