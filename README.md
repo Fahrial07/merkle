@@ -1,4 +1,4 @@
-# merkle
+# merkle - Folder Di Branch Master
 
 ## 
 1. Install the package in `composer.json` with executing command
