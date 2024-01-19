@@ -1,4 +1,4 @@
-# merkle - Folder Di Branch Master
+# merkle - Sorry, Folder Di Branch Master :)
 
 ## 
 1. To Run Multipication / Number 1
@@ -11,11 +11,12 @@ node index.js
 ```bash
 npm i
 ```
-2. To Bulid
+2. create file .env copy from exaple.env
+3. To Bulid, before run to dev 
 ```bash
   npm run ts
 ```
-2. To Run
+4. To Run
 ```bash
   npm run dev
 ```
