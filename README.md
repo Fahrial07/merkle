@@ -1,24 +1,27 @@
 # merkle - Folder Di Branch Master
 
 ## 
-1. Install the package in `composer.json` with executing command
+1. To Run Multipication / Number 1
 
 ```bash
-composer install
+node index.js
 ```
-
-2. For default `base_url` is `http://whiz-api.test`
-3. For default `database` is `whizz`
-4. Change the other setting in `.env` and then execute command
-
+## To Run Guest Book
+1. To Run Guest Book
 ```bash
-php artisan config:cache
+npm i
+```
+2. To Bulid
+```bash
+  npm run ts
+```
+2. To Run
+```bash
+  npm run dev
 ```
 
 5. For API documentation, you can check the postman link
 
 ```bash
-https://documenter.getpostman.com/view/14479523/2s8YRduc8F
-```
 
-6. Enjoy... :)
+```
