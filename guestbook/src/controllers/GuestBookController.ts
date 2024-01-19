@@ -7,6 +7,7 @@ class GuestBookController {
       try {
          let { name, address, phone, note } = req.body;
 
+         //valudate check empty data
          if (name == "") {
             return res.status(400).json({
                message: 'Name is required'
@@ -31,7 +32,9 @@ class GuestBookController {
             });
          }
 
+         //validate check name to unique
          const checkName = await guest.findOne({ where: { name: name } });
+         //if true return error notice
          if (checkName) {
             return res.status(400).json({
                message: 'Name already exist'
@@ -45,6 +48,7 @@ class GuestBookController {
             });
          }
 
+         //if fales all validate store data to database
          const createGuest = await guest.create({
             name: name,
             address: address,
@@ -52,6 +56,7 @@ class GuestBookController {
             note: note
          });
 
+         //return result data
          return res.status(201).json({
             message: 'Guest form successfully created',
             data: createGuest

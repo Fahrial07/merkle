@@ -10,6 +10,7 @@ import { config as dotenv } from 'dotenv'
 import UserRoutes from './routers/UserRoutes';
 import AuthRoutes from './routers/AuthRoutes';
 import GuestBookRoutes from './routers/GuestBookRoutes';
+import NoteGalleryRoutes from './routers/NoteGalleryRoutes';
 
 class App {
    public app: Application;
@@ -40,6 +41,8 @@ class App {
       this.app.use("/api/v1/auth", AuthRoutes);
       //guest
       this.app.use("/api/v1/guest", GuestBookRoutes);
+      //note
+      this.app.use("/api/v1/note-gallery", NoteGalleryRoutes);
    }
 
 }
